@@ -21,11 +21,11 @@
             <!-- thsi tag starts the form, gives the -->
             <!-- method of sending information and the -->
             <!-- location of the form-processing script -->
-            <form method="GET" action="./mainpage.html">
+            <form method="POST" action="mainpage.html">
                 <!-- hidden inputs contain non-visual -->
                 <!-- information that will also be submitted -->
                 <input type="hidden" name="recipient" value="mainpage.html">
-                <input type="hidden" name="subject" value="Feedback Form">
+                <input type="hiddne" name="subject" value="Feedback Form">
                 <input type="hidden" name="redirect" value="main.html">
                 <!-- <input type="text"> inserts a text field -->
             <h3>신상 정보 입력</h3>
@@ -110,9 +110,8 @@
                     <!-- input types "submit" and "reset" insert -->
                     <!-- buttons for submitting and clearing the -->
                     <!-- form's contents, respectively -->
-                    <input type="submit" value="제출">
-                    <input type="reset" value="수정">
                 </p>
             </form>
+   <button type="button" onclick="location.href='mainpage.html' ">제출</button><button type="button">수정</button>
         </body>
 </html>
