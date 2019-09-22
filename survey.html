@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<!-- Fig. 2.1: main.html -->
+<!-- First HTML5 example. -->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>사회심리학 설문조사</title>
+    </head>
+
+    <body>
+        <h1>사회심리학 설문조사</h1>
+
+        <p>
+            부산대학교 심리학과 사회심리학 수업 연구에 참여해 주셔서 감사합니다.<br>
+            테스트지의 검사 결과는 연구 프로젝트 이외의 결과로 쓰이지 않을 것이며,<br>
+            개인 정보는 도용방지를 위하여 연구 후 삭제됨을 미리 알려드립니다.<br>
+            정확한 결과를 위해서 아래의 질문들에 최대한 정확하게 답변하여 주시기 바랍니다.
+        </p>
+
+            <!-- thsi tag starts the form, gives the -->
+            <!-- method of sending information and the -->
+            <!-- location of the form-processing script -->
+            <form method="POST" action="mainpage.html">
+                <!-- hidden inputs contain non-visual -->
+                <!-- information that will also be submitted -->
+                <input type="hidden" name="recipient" value="mainpage.html">
+                <input type="hiddne" name="subject" value="Feedback Form">
+                <input type="hidden" name="redirect" value="main.html">
+                <!-- <input type="text"> inserts a text field -->
+            <h3>신상 정보 입력</h3>
+                <p>연구를 위한 간단한 신상 정보에 대한 설문 이후<br>
+                다음페이지부터 본 설문이 시작 됩니다.</p>
+                 
+                <p><label>이름을 입력하여 주세요 :<br>
+                    <input name="name" type="text" size="25" maxlength="30">
+                </label></p>
+
+                
+                <p>
+                    <label>
+                        성별을 선택해 주세요 :
+                        <select name="rating">
+                            <option selected>여성</option>
+                            <option>남성</option>
+                            <option>기타</option>
+                        </select>
+                    </label>
+                </p>
+
+                <p>
+                        <label>
+                            현재 나이를 선택해 주세요 :
+                            <select name="rating">
+                                <option selected>19이하</option>
+                                <option>20</option>
+                                <option>21</option>
+                                <option>22</option>
+                                <option>23</option>
+                                <option>24</option>
+                                <option>25</option>
+                                <option>26</option>
+                                <option>27</option>
+                                <option>28</option>
+                                <option>29</option>
+                                <option>30이상</option>
+                            </select>
+                        </label>
+                    </p>
+
+                <p><label>소속 학과를 입력해 주세요 :<br>
+                        <input name="name" type="text" size="25" maxlength="30">
+                    </label></p>
+                
+                <!-- <input type="password"> inserts a -->
+                <!-- textbox whose display is masked with -->
+                <!-- asterisk characters -->
+                <p><label>이메일 주소를 입력해 주세요 :<br>
+                        <input name="email" type="password" size="25">
+                    </label></p>
+
+
+
+
+
+                <p>
+                    현재 학년은 무엇인가요? :<br>
+
+                    <label>
+                        <input name="thingsliked" type="checkbox" value="Design">1학년</label>
+                    <label>
+                        <input name="thingsliked" type="checkbox" value="Links">2학년</label>
+                    <label>
+                        <input name="thingsliked" type="checkbox" value="Ease">3학년</label>
+                    <label>
+                        <input name="thingsliked" type="checkbox" value="Images">4학년</label>
+                    <label>
+                        <input name="thingsliked" type="checkbox" value="Code">기타</label>
+                </p>
+                
+                
+
+                <p><label>연구에 참여하게 된 계기를 입력해주세요 :<br>
+                    <textarea name="comments"
+                        rows="4" cols="36">여기에 내용을 입력해주세요.</textarea>
+                </label></p>
+
+
+                <p>
+                    <!-- input types "submit" and "reset" insert -->
+                    <!-- buttons for submitting and clearing the -->
+                    <!-- form's contents, respectively -->
+                    <input type="submit" value="제출">
+                    <input type="reset" value="수정">
+                </p>
+            </form>
+        </body>
+</html>
